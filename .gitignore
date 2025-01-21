@@ -1,0 +1,8 @@
+# Ignore .h5 files
+*.h5
+
+# Ignore old_executables folder
+old_executables/
+
+# Ignore 1my_rmsf_folder
+1my_rmsf_folder/
