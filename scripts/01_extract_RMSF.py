@@ -1,7 +1,7 @@
 
 #!/usr/bin/env python3
 """
-extract_RMSF.py
+01_extract_RMSF.py
 
 Extract residue-level RMSF data from an mdCATH .h5 file, across all
 temperature/replica groups. If the domain stores 'resid' and 'resname'
