@@ -172,7 +172,7 @@ def main():
     # Create a FacetGrid histogram, one column per temperature
     # This shows the distribution of domain-level mean RMSF at each temperature
     g = sns.FacetGrid(df, col="temperature", col_wrap=3, sharex=False, sharey=False)
-    g.map(sns.histplot, "mean_rmsf", kde=False, bins=10, color="steelblue")
+    g.map(sns.histplot, "mean_rmsf", kde=True, bins=100, color="steelblue")
 
     g.set_titles(col_template="Temperature: {col_name}")
     g.set_xlabels("Mean RMSF")
@@ -190,3 +190,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# /// Split into uneven shaped bins, 
+# /// So that each bin has the same number of entries 
+# 
